@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculator.js"></script>
+    <script src="main.js"></script>
+</head>
+<body class="body">
+    <h1 class="title">Calculator</h1 >
+    <input title="Calculator" class="input" type="text" onchange="calculate(this.value)" placeholder="Enter operation" value="1+2">
+    <div class="result-container">
+        <div class="title">Result</div> 
+        <span id="result">3</span>
+    </div>
+</body>
+</html>
