@@ -6,7 +6,7 @@ function calculate(inputValue){
 
     const operation = inputValue.match(expression);
     if(Number.isNaN(numberA) || Number.isNaN(numberB) || operation === null){
-        updateResult(0);
+        updateResult('Expression not recognized');
         return;    
     }
     const calculator = new Calculator();
@@ -31,7 +31,7 @@ function calculate(inputValue){
     updateResult(result);
 }
 
-function updateResult(result){
+function updateResult(result) {
     const element = document.getElementById('result');
     element.innerText = result;
 }
